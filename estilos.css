@@ -1,113 +1,56 @@
+/* Estilo general de la página */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background-color: #f2f0e8;
-    color: #171717;
-    font-size: 16px;
-    line-height: 1.6;
+    background-color: #f4f0ff;
+    color: #333333;
+    font-family: Arial, sans-serif;
 }
 
+/* Encabezado */
 header {
-    background-color: #171717;
-    color: #f2f0e8;
-    text-align: center;
-    padding: 60px 30px;
-}
-
-header p {
-    color: #d7ff3f;
-    font-size: 1rem;
-    font-weight: 700;
-    margin: 10px 0;
-}
-
-h1 {
+    background-color: #2d1e4f;
     color: #ffffff;
-    font-size: 4rem;
-    font-weight: 700;
-    margin: 10px 0;
-}
-
-nav{
-    background-color: #d7ff3f;
     text-align: center;
-    padding: 16px;
+    padding: 25px;
 }
 
-nav a{
-    color: #171717;
-    font-weight: 700;
-    text-decoration: none;
-    margin: 0 12px;
-}
-
-nav a:hover{
-    color: crimson;
-}
-
-main {
-    max-width: 900px;
-    margin: auto;
-    padding: 40px 30px;
-}
-
-section {
-    background-color: #ffffff;
-    margin-bottom: 24px;
-    padding: 30px;
+/* Títulos */
+h1 {
+    color: #ffcc66;
 }
 
 h2 {
-    color: #171717;
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-top: 0;
+    color: #6c3db5;
 }
 
-p {
-    margin-bottom: 16px;
+h3 {
+    color: #8b45c6;
 }
 
-.excusa{
-    background-color: #f4f4f4;
-    padding: 20px;
-    margin-bottom: 16px;
+/* Menú de navegación */
+nav a {
+    color: #6c3db5;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.excusa h3{
-    color: #b00020;
-    margin-top: 0;
+/* Efecto al pasar el ratón por los enlaces */
+nav a:hover {
+    color: #e05297;
 }
 
-#estado{
-    background-color: #171717;
-    color: ghostwhite;
+/* Tarjetas de excusas */
+.excusa {
+    background-color: #ffffff;
+    color: #333333;
+    border-left: 5px solid #8b45c6;
+    padding: 15px;
+    margin: 15px 0;
 }
 
-#estado h2{
-    color: ghostwhite;
-}
-
-ul {
-    line-height: 1.9;
-}
-
-ol {
-    line-height: 1.9;
-}
-
-li {
-    margin-bottom: 8px;
-}
-
+/* Pie de página */
 footer {
-    background-color: #d7ff3f;
-    color: #171717;
+    background-color: #2d1e4f;
+    color: #ffffff;
     text-align: center;
-    padding: 24px;
-}
-
-footer p {
-    font-weight: 700;
-    margin: 0;
+    padding: 15px;
 }
