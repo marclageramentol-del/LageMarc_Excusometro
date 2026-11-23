@@ -1,112 +1,222 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sistema experimental para analizar excusas académicas de dudosa credibilidad">
-    <meta name="keywords" content="excusas, estudiantes, detector, excusómetro">
-    <title>Excusómetro Molón</title>
+    <meta name="description" content="Plataforma para investigar y evaluar excusas de estudiantes">
+    <meta name="keywords" content="excusómetro, excusas, instituto, estudiantes">
+    <title>Excusómetro Molón | Detector de excusas</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
     <header>
-        <p>INSTITUTO DE ANÁLISIS DE EXCUSAS ACADÉMICAS</p>
+        <p>CENTRO DE INVESTIGACIÓN DE EXCUSAS ESTUDIANTILES</p>
         <h1>EXCUSÓMETRO MOLÓN</h1>
-        <p>Porque “se me borró solo” merece un procedimiento científico.</p>
+        <p>Investigamos esas explicaciones que nadie termina de creerse.</p>
     </header>
 
     <nav>
-        <a href="#que-hacemos">Qué hacemos?</a>
-        <a href="#archivo">Archivo</a>
-        <a href="#protocolo">Protocolo</a>
-        <a href="#estado">Estado</a>
+        <a href="#que-hacemos">Sobre nosotros</a>
+        <a href="#archivo">Excusas famosas</a>
+        <a href="#protocolo">Nuestro método</a>
+        <a href="#registro">Enviar excusa</a>
+        <a href="#estado">Estado del sistema</a>
     </nav>
 
     <main>
 
         <section id="que-hacemos">
-            <h2>¿Qué hacemos aquí?</h2>
+            <h2>¿A qué nos dedicamos?</h2>
 
             <p>
-                Analizamos excusas académicas mediante tecnología de dudosa fiabilidad,
-                criterios discutibles y una cantidad preocupante de café.
+                En nuestro centro estudiamos las excusas más curiosas
+                que utilizan los estudiantes cuando algo no sale
+                como esperaban.
             </p>
 
             <p>
-                Nuestro objetivo es determinar si una excusa es razonable, sospechosa
-                o directamente patrimonio cultural del aula.
+                Utilizamos métodos de investigación poco convencionales
+                para descubrir si una explicación es creíble,
+                sospechosa o simplemente imposible de justificar.
             </p>
         </section>
 
         <section id="archivo">
-            <h2>Archivo de grandes clásicos</h2>
+            <h2>Nuestra colección de excusas</h2>
 
             <p>
-                Después de años de investigación de campo, estas son algunas de las
-                especies más frecuentes:
+                A lo largo del tiempo hemos recopilado algunas
+                de las justificaciones más repetidas en clase.
+                Aquí puedes consultar varios ejemplos.
             </p>
 
             <article class="excusa">
-                <h3>Yo juraría que lo había subido</h3>
-                <p>Excusa habitual cuando el archivo no aparece </p>
-            </article>
-            <article class="excusa">
-                <h3>En mi ordenador sí funcionaba</h3>
-                <p>Una de las grandes aportaciones de la infomática</p>
-            </article>
-            <article class="excusa">
-                <h3>GitHub estaba raro</h3>
-                <p>Diagnóstico técnico ampliamente utilizado </p>
+                <h3>Estaba seguro de haberlo entregado</h3>
+                <p>
+                    Una explicación muy frecuente cuando el profesor
+                    no encuentra ningún archivo entregado.
+                </p>
+                <a href="paginas/expediente.html">
+                    Consultar expediente X-404 →
+                </a>
             </article>
 
-            <!-- <ul>
-                <li>“Yo juraría que lo había subido.”</li>
-                <li>“En mi ordenador sí funcionaba.”</li>
-                <li>“GitHub estaba raro.”</li>
-                <li>“Pensaba que era para la semana que viene.”</li>
-                <li>“Lo tenía hecho, pero no encuentro el archivo.”</li>
-            </ul> -->
+            <article class="excusa">
+                <h3>En casa funcionaba perfectamente</h3>
+                <p>
+                    Un clásico de la informática que aparece
+                    cuando llega el momento de enseñar el proyecto.
+                </p>
+                <a href="paginas/expediente.html">
+                    Consultar el caso →
+                </a>
+            </article>
+
+            <article class="excusa">
+                <h3>La culpa fue de GitHub</h3>
+                <p>
+                    Una justificación tecnológica que suele aparecer
+                    justo antes de la fecha de entrega.
+                </p>
+            </article>
         </section>
 
         <section id="protocolo">
-            <h2>Protocolo oficial de análisis</h2>
+            <h2>¿Cómo analizamos las excusas?</h2>
 
             <p>
-                Toda excusa que entra en nuestras instalaciones pasa por un
-                procedimiento extremadamente riguroso:
+                Para estudiar cada caso seguimos una serie de pasos
+                que nos permiten llegar a una conclusión
+                supuestamente científica.
             </p>
 
             <ol>
-                <li>Escuchar la excusa manteniendo una expresión neutral.</li>
-                <li>Comprobar si contiene las palabras “GitHub”, “wifi” o “se borró”.</li>
-                <li>Evaluar el nivel de dramatismo.</li>
-                <li>Buscar contradicciones científicamente sospechosas.</li>
-                <li>Emitir un veredicto con autoridad completamente inventada.</li>
+                <li>Leer atentamente la explicación del estudiante.</li>
+                <li>Detectar posibles problemas técnicos mencionados.</li>
+                <li>Comprobar si la historia tiene sentido.</li>
+                <li>Analizar las contradicciones y el dramatismo.</li>
+                <li>Determinar el nivel de credibilidad de la excusa.</li>
             </ol>
         </section>
 
+        <section id="registro">
+            <h2>Envía tu propia excusa</h2>
+
+            <p>
+                Completa el siguiente formulario con los datos
+                del incidente para registrar tu caso.
+            </p>
+
+            <form class="form-excusa" action="paginas/recibida.html" method="get">
+
+                <div class="campo">
+                    <label for="nombre">Nombre del estudiante:</label>
+                    <input type="text" id="nombre" name="nombre"
+                           minlength="2" maxlength="50" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="fecha">Fecha de lo ocurrido:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div class="campo">
+                    <label for="drama">¿Cuánto dramatismo hubo?</label>
+                    <select id="drama" name="drama" required>
+                        <option value="">Elige una opción</option>
+                        <option value="bajo">Poco dramatismo</option>
+                        <option value="medio">Bastante preocupante</option>
+                        <option value="alto">Drama absoluto</option>
+                    </select>
+                </div>
+
+                <fieldset class="campo">
+                    <legend>Tipo de excusa</legend>
+
+                    <label>
+                        <input type="radio" name="categoria"
+                               value="tecnica" required>
+                        Fallo tecnológico
+                    </label>
+
+                    <label>
+                        <input type="radio" name="categoria"
+                               value="organizacion">
+                        Despiste u organización
+                    </label>
+
+                    <label>
+                        <input type="radio" name="categoria"
+                               value="misterio">
+                        Suceso sin explicación
+                    </label>
+                </fieldset>
+
+                <div class="campo">
+                    <label for="excusa">Explica lo que pasó:</label>
+                    <textarea id="excusa" name="excusa" rows="6"
+                              minlength="20" maxlength="500"
+                              required></textarea>
+                </div>
+
+                <div class="campo campo-check">
+                    <label>
+                        <input type="checkbox" name="declaracion" required>
+                        Aseguro que los hechos explicados son mi versión oficial.
+                    </label>
+                </div>
+
+                <button type="submit">Registrar mi excusa</button>
+
+            </form>
+        </section>
+
         <section id="estado">
-            <h2>Estado actual del sistema</h2>
+            <h2>Información del sistema</h2>
 
-            <p>
-                OPERATIVO · Preparado para recibir nuevas excusas.
-            </p>
+            <div class="panel-estado">
 
-            <p>
-                Índice de credibilidad medio del trimestre: información clasificada.
-            </p>
+                <div class="dato-estado">
+                    <span class="etiqueta">Funcionamiento</span>
+                    <span class="valor">Activo</span>
+                </div>
+
+                <div class="dato-estado">
+                    <span class="etiqueta">Nivel de credibilidad</span>
+                    <span class="valor">Desconocido</span>
+                </div>
+
+                <div class="dato-estado">
+                    <span class="etiqueta">Casos registrados</span>
+                    <span class="valor">1</span>
+                </div>
+
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <p>Excusómetro Molón · Ciencia, rigor y sospechas desde 2026.</p>
+        <p>Excusómetro Molón · Analizando excusas desde 2026.</p>
+
+        <a href="https://github.com/mariapla/Excusometro-FUAB"
+           target="_blank" rel="noopener noreferrer">
+            Consultar proyecto en GitHub
+        </a>
     </footer>
 
-</body>
+    <div class="aviso-sistema">
+        Sistema activo · Analizando posibles excusas
+    </div>
 
+</body>
 </html>
-  

@@ -1,56 +1,416 @@
-/* Estilo general de la página */
 body {
-    background-color: #f4f0ff;
-    color: #333333;
-    font-family: Arial, sans-serif;
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f3eb;
+    color: #252525;
+    font-size: 16px;
+    line-height: 1.7;
 }
 
-/* Encabezado */
 header {
-    background-color: #2d1e4f;
-    color: #ffffff;
+    background-color: #242424;
+    color: #f5f3eb;
     text-align: center;
-    padding: 25px;
+    padding: 55px 25px;
 }
 
-/* Títulos */
-h1 {
-    color: #ffcc66;
-}
-
-h2 {
-    color: #6c3db5;
-}
-
-h3 {
-    color: #8b45c6;
-}
-
-/* Menú de navegación */
-nav a {
-    color: #6c3db5;
-    text-decoration: none;
+header p {
+    color: #c9f45a;
+    font-size: 1.1rem;
     font-weight: bold;
+    margin: 12px 0;
 }
 
-/* Efecto al pasar el ratón por los enlaces */
-nav a:hover {
-    color: #e05297;
-}
-
-/* Tarjetas de excusas */
-.excusa {
-    background-color: #ffffff;
-    color: #333333;
-    border-left: 5px solid #8b45c6;
-    padding: 15px;
+h1 {
+    color: white;
+    font-size: 3.7rem;
+    font-weight: 700;
     margin: 15px 0;
 }
 
-/* Pie de página */
-footer {
-    background-color: #2d1e4f;
-    color: #ffffff;
+nav {
+    background-color: #c9f45a;
     text-align: center;
-    padding: 15px;
+    padding: 18px;
+}
+
+nav a {
+    color: #252525;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #b22222;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 35px 25px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 28px;
+    padding: 28px;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #242424;
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 18px;
+}
+
+.excusa {
+    background-color: #eeeeee;
+    padding: 22px;
+    margin-bottom: 20px;
+    color: #c62828;
+    border-left: 4px solid #c62828;
+}
+
+.excusa h3 {
+    color: #a81828;
+    margin-top: 0;
+}
+
+#estado {
+    background-color: #242424;
+    color: white;
+}
+
+#estado h2 {
+    color: white;
+}
+
+ul, ol {
+    line-height: 2;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #c9f45a;
+    color: #252525;
+    text-align: center;
+    padding: 28px;
+}
+
+footer p {
+    font-weight: bold;
+    margin: 0;
+}
+
+main a {
+    color: #a81828;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: #d32f2f;
+}
+
+.volver {
+    margin-top: 35px;
+}
+
+footer a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #252525;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.expediente header {
+    background-image: url("img/fondo-expediente.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.evidencia {
+    background-color: #d8d8d8;
+    padding: 1.2em;
+    margin: 1.7em 0;
+    border: 2px solid #252525;
+    border-radius: 4px;
+}
+
+.evidencias img {
+    max-width: 100%;
+    display: block;
+}
+
+.evidencia figcaption {
+    margin-top: 0.8em;
+    font-size: 0.95em;
+    font-weight: bold;
+}
+
+.panel-estado {
+    margin-top: 2em;
+    display: flex;
+    gap: 1.2em;
+}
+
+.dato-estado {
+    background-color: white;
+    color: #252525;
+    padding: 1.2em;
+    margin-bottom: 1em;
+    border: 2px solid #c9f45a;
+    flex: 1;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.etiqueta {
+    font-weight: bold;
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 0.4em;
+}
+
+.valor {
+    color: #b22222;
+    display: inline-block;
+    background-color: #c9f45a;
+    padding: 0.4em 0.7em;
+    border: 1px solid #252525;
+}
+
+.nivel-credibilidad {
+    display: inline-block;
+    background-color: #b22222;
+    color: white;
+    padding: 0.4em 0.7em;
+    margin-left: 0.4em;
+}
+
+.grid-evidencias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2em;
+}
+
+.cabecera-expediente {
+    position: relative;
+}
+
+.sello-clasificado {
+    position: absolute;
+    top: 1.2em;
+    right: 1.2em;
+    background-color: #b22222;
+    color: white;
+    padding: 0.5em 0.8em;
+    border: 2px solid white;
+    font-weight: bold;
+    transform: rotate(-3deg);
+}
+
+.aviso-sistema {
+    position: fixed;
+    right: 1.2em;
+    bottom: 1.2em;
+    background-color: #242424;
+    color: white;
+    padding: 0.8em 1.2em;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.foto-caso {
+    width: 13em;
+    float: left;
+    margin-right: 1.2em;
+    margin-bottom: 0.7em;
+    border: 2px solid #252525;
+}
+
+.error {
+    overflow: auto;
+}
+
+.form-excusa {
+    max-width: 46em;
+    margin-top: 2.5em;
+}
+
+.campo {
+    margin-bottom: 1.7em;
+}
+
+.campo > label,
+fieldset > legend {
+    display: block;
+    margin-bottom: 0.6em;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.9em;
+    background-color: #fafafa;
+    color: #252525;
+    border: 2px solid #333333;
+    border-radius: 3px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #c9f45a;
+    outline-offset: 2px;
+}
+
+fieldset.campo {
+    padding: 1.2em;
+    border: 2px solid #252525;
+}
+
+fieldset.campo label {
+    display: block;
+    margin-bottom: 0.8em;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+    accent-color: #b22222;
+}
+
+.form-excusa button {
+    display: inline-block;
+    padding: 0.9em 1.4em;
+    background-color: #242424;
+    color: #c9f45a;
+    border: 2px solid #242424;
+    border-radius: 4px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.form-excusa button:hover {
+    background-color: #c9f45a;
+    color: #242424;
+}
+
+.mensaje-confirmacion {
+    max-width: 42em;
+    margin: 4em auto;
+    padding: 2.5em;
+    border: 3px solid #252525;
+    border-radius: 5px;
+}
+
+.codigo-confirmacion {
+    display: inline-block;
+    background-color: #c9f45a;
+    padding: 0.5em 0.8em;
+    font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+
+    body {
+        padding-bottom: 3.5em;
+    }
+
+    .panel-estado {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8em;
+    }
+
+    .grid-evidencias {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 1.5em;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.7em;
+        padding: 1.2em;
+    }
+
+    nav a {
+        margin: 0.3em 0;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    header {
+        padding: 2.8em 1.2em;
+    }
+
+    section {
+        padding: 1.3em;
+        margin-bottom: 1.5em;
+    }
+
+    main {
+        padding: 1.5em 1em;
+    }
+
+    .sello-clasificado {
+        position: relative;
+        display: inline-block;
+        top: auto;
+        right: auto;
+        margin-bottom: 1.2em;
+    }
+
+    .foto-caso {
+        width: 100%;
+        max-width: 100%;
+        float: none;
+        margin: 0 0 1.2em 0;
+        box-sizing: border-box;
+    }
+
+    .aviso-sistema {
+        left: 0.8em;
+        right: 0.8em;
+        bottom: 0.8em;
+        text-align: center;
+        padding: 0.7em;
+    }
+
+    .form-excusa {
+        width: 100%;
+        margin-top: 1.5em;
+    }
 }
